@@ -8,7 +8,7 @@ Pick a template, copy its `.claude/` folder into your project, and start using a
 
 | Template | Agents | Skills | Use case |
 |----------|--------|--------|----------|
-| **[starter](./starter/)** | 2 | 2 | PM + Developer — general-purpose starting point |
+| **[starter](./starter/)** | 4 | 5 | PM + Developer + Tester + UX — general-purpose starting point |
 | **[pr-review](./pr-review/)** | 3 | 3 | Security, performance, and style review |
 | **[bug-fix](./bug-fix/)** | 3 | 3 | Diagnose, fix, and verify bugs |
 | **[code-quality](./code-quality/)** | 2 | 3 | Code review, refactoring, security audit |
@@ -60,8 +60,10 @@ Skills are slash commands in `.claude/skills/<name>/SKILL.md` that route to agen
 |-------|-------|------------|------|
 | product-manager | opus | plan | RICE prioritization, task breakdown |
 | developer | sonnet | acceptEdits | SOLID principles, guard clauses |
+| tester | sonnet | default | Code review, test execution, quality gates |
+| ux-designer | sonnet | plan | UX heuristics, accessibility, mobile review |
 
-Skills: `/plan-feature` `/implement`
+Skills: `/plan-feature` `/implement` `/code-review` `/test` `/ux-check`
 
 ### pr-review
 
@@ -101,7 +103,7 @@ Skills: `/code-review` `/refactor` `/security-audit`
 ## Repo Structure
 
 ```
-starter/                 # General-purpose PM + Developer
+starter/                 # General-purpose PM + Developer + Tester + UX
   .claude/
     agents/
     skills/
