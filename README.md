@@ -12,7 +12,7 @@ Pick a template, copy its `.claude/` folder into your project, and start using a
 | **[pr-review](./pr-review/)** | 3 | 3 | Security, performance, and style review |
 | **[bug-fix](./bug-fix/)** | 3 | 3 | Diagnose, fix, and verify bugs |
 | **[code-quality](./code-quality/)** | 2 | 3 | Code review, refactoring, security audit |
-| **[content-pipeline](./content-pipeline/)** | 4 | 7 | Write, edit, review, and fact-check content |
+| **[content-pipeline](https://github.com/PingPingE/ai-content-agents)** | 4 | 7 | Write, edit, review, and fact-check content — **moved to standalone repo** |
 
 ## Quick Start
 
@@ -94,14 +94,9 @@ Skills: `/code-review` `/refactor` `/security-audit`
 
 ### content-pipeline
 
-| Agent | Model | Role |
-|-------|-------|------|
-| content-writer | sonnet | Drafting from briefs |
-| editor | sonnet | Structure, tone, clarity |
-| content-reviewer | sonnet | Final review with checklist |
-| fact-checker | haiku | Claim verification |
-
-Skills: `/write-content` `/edit-content` `/review-content` `/fact-check` `/content-pipeline` `/ship` `/auto-fix`
+> Moved to standalone repo: **[ai-content-agents](https://github.com/PingPingE/ai-content-agents)**
+>
+> 4 agents (writer, reviewer, editor, fact-checker) + 7 skills for automated content creation, review, editing, and fact-checking.
 
 ## Repo Structure
 
@@ -126,10 +121,7 @@ code-quality/            # Code review + refactor
     agents/
     skills/
 
-content-pipeline/        # Content creation workflow
-  .claude/
-    agents/
-    skills/
+content-pipeline/        # → github.com/PingPingE/ai-content-agents
 ```
 
 ## Contributing
